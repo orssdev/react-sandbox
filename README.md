@@ -24,11 +24,20 @@ npm run dev
 | `npm run build`   | Type-check and build to `dist/`     |
 | `npm run preview` | Serve the production build locally  |
 
+## Architecture
+
+Code is organized by feature. Each concept lives in `src/features/<feature>/` and is surfaced from the main screen, `Home`. See `AGENTS.md` for the full rules.
+
+## Theming
+
+Light and dark themes are switched with `data-theme` on `<html>` and persisted in `localStorage`. Colors are semantic Tailwind tokens (`bg-background`, `text-foreground`, `text-muted`, `border-border`) defined in `src/app/index.css`.
+
 ## Layout
 
 ```
 src/
   main.tsx    entry point
-  App.tsx     root component
-  index.css   Tailwind import
+  app/        App.tsx, Home.tsx (main screen), index.css (Tailwind + theme tokens)
+  shared/
+    theme/    ThemeProvider, useTheme, ThemeToggle
 ```
