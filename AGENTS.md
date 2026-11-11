@@ -33,7 +33,8 @@ Rules:
 - Dependency direction: `app` -> `features` -> `shared`. `shared` never imports from `features` or `app`; features never import from `app`.
 - Features do not import from each other. If two features need the same code, move it to `shared`, or compose them in `app`.
 - Start code inside the feature that uses it. Promote to `shared` only when a second feature needs it.
-- Each concept registers its entry point in the `concepts` list in `src/app/Home.tsx`; `Home` is the only place that knows about all features.
+- Each concept registers its entry point in the `concepts` list in `src/app/concepts.ts`, which drives both the routes in `App` and the links on `Home`; `src/app` is the only place that knows about all features.
+- Routing uses React Router (declarative mode, `BrowserRouter`); the route table lives in `src/app/App.tsx`.
 - Create a feature folder only when there is a feature to put in it; add `components/`, `hooks/`, `api/` as needed, not up front.
 
 ## Conventions

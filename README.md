@@ -7,6 +7,7 @@ A minimal sandbox for trying out React ideas.
 - [React](https://react.dev) 19
 - [Vite](https://vite.dev) 8
 - [Tailwind CSS](https://tailwindcss.com) 4 via `@tailwindcss/vite`
+- [React Router](https://reactrouter.com) 7+ (declarative mode)
 - TypeScript (TSX)
 
 ## Getting started
@@ -37,7 +38,8 @@ Light and dark themes are switched with `data-theme` on `<html>` and persisted i
 ```
 src/
   main.tsx    entry point
-  app/        App.tsx, Home.tsx (main screen), index.css (Tailwind + theme tokens)
+  app/        App.tsx (routes), Home.tsx (main screen), concepts.ts (feature registry), index.css
+  features/   feature1 ... feature6, one folder per concept
   shared/
     theme/    ThemeProvider, useTheme, ThemeToggle
 ```
