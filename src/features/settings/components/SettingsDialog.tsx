@@ -1,9 +1,9 @@
 import { useEffect, useRef } from 'react'
-import { useTheme, type Theme } from '../shared/theme/index.ts'
+import { useTheme, type Theme } from '../../../shared/theme/index.ts'
 
 const themes: Theme[] = ['system', 'light', 'dark']
 
-export default function SettingsDialog({
+export function SettingsDialog({
   open,
   onClose,
 }: {

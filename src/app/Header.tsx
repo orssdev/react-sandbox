@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router'
-import SettingsDialog from './SettingsDialog.tsx'
+import { SettingsDialog } from '../features/settings/index.ts'
 
 export default function Header() {
   const [settingsOpen, setSettingsOpen] = useState(false)
