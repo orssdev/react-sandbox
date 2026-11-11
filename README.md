@@ -42,5 +42,5 @@ src/
   features/   feature1 ... feature6, one folder per concept
   shared/
     ui/       Placeholder
-    theme/    ThemeProvider, useTheme, ThemeToggle
+    theme/    ThemeProvider, useTheme
 ```
