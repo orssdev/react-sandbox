@@ -41,5 +41,6 @@ src/
   app/        App.tsx (routes), Home.tsx (main screen), concepts.ts (feature registry), index.css
   features/   feature1 ... feature6, one folder per concept
   shared/
+    ui/       Placeholder
     theme/    ThemeProvider, useTheme, ThemeToggle
 ```

@@ -23,6 +23,7 @@ src/
       types.ts      feature types
       index.ts      public API (the only import surface for other code)
   shared/       code reused by 2+ features: ui/, hooks/, lib/, types/
+    ui/         Placeholder (blank screen with a centered name)
     theme/      ThemeProvider, useTheme, ThemeToggle (light/dark)
   main.tsx      entry point
 ```
